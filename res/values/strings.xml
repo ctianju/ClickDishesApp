@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">ClickDishesApp</string>
+    <string-array name="soup">
+       <item >排骨汤</item> 
+       <item >羊肉汤</item> 
+       <item >紫菜汤</item> 
+       <item >猪肺汤</item> 
+       <item >土鸡汤</item>  
+    </string-array>
+    
+     <string-array name="drink">
+       <item >鲜榨芒果</item> 
+       <item >鲜榨西瓜</item> 
+       <item >百事可乐</item> 
+       <item >国酒茅台</item> 
+       <item >雪花啤酒</item>  
+    </string-array> 
+       <string name="gouwuche">购物车</string> 
+       <string name="sumCount">0份</string> 
+       <string name="sumPrice">0元</string> 
+       <string name="submit">下单</string> 
+       <string name="soup">靓汤</string> 
+       <string name="drink">冷饮</string> 
+       <string name="twoSelectOne">二选一:</string>
+</resources>

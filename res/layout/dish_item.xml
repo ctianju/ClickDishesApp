@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_dishImg"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/cai1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_dishName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:text="红烧肉"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                   android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="已售出份数:"
+                    android:textColor="#C0C0C0"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_saledShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="15："
+                    android:textColor="#C0C0C0"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                   android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="￥"
+                    android:textColor="#ff0000"
+                    android:textSize="15sp" />
+                
+                <TextView
+                    android:id="@+id/tv_dishUnitPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="120.0"
+                    android:textColor="#ff0000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <Button
+                android:textColor="#ffffff"
+            android:id="@+id/btn_sub"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:visibility="invisible"
+            android:focusable="false"
+            android:textSize="20sp" 
+            />
+
+        <EditText
+            android:id="@+id/et_count"
+            android:gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+     	    android:visibility="invisible"
+            android:layout_toLeftOf="@id/btn_sub"
+            android:background="#ffffff"
+            android:focusable="false"
+            android:text="3" />
+
+        <Button
+            android:textColor="#ffffff"
+            android:id="@+id/btn_add"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:focusable="false"
+            android:layout_toLeftOf="@id/et_count"
+            android:text="+"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>
