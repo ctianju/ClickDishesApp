@@ -1,2 +1,2 @@
-# ClickDishesApp
-自定义adapter订餐环节
+﻿# ClickDishesApp
+Android  自定义adapter订餐环节
